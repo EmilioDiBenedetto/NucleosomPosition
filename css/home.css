@@ -1,0 +1,266 @@
+body {
+    background-color: #a3d6ff;
+    background-attachment: fixed;    
+    background-size: cover;
+    padding: 10px;        
+}
+
+.barranav {
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 5px solid #3f9df5ce;
+    border-radius: 7px;
+}
+
+/* Style the topnav links */
+.barranav p {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.barranav a{
+    float: left;
+    display: block;
+    
+    color: #3f9df5;
+    text-align: center;
+    padding: 28px 16px;;
+    text-decoration: none;
+} 
+.barranav a:hover {
+    color: #112d47;
+}
+
+.select {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #3f9df5ce;
+}
+
+#Server{
+    border-radius: 7px 7px 0px 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #3f9df5ce;
+}
+#File{
+    border-radius: 0px 0px 7px 7px ;
+    margin-top: 0px;
+    border-top: 1px solid #3f9df5ce;
+}
+
+.select .selectServer {
+    width: 24%;
+    float: left;
+    color: black;
+    padding: 6px;
+}
+
+.select .selectServerText {
+    width: 24%;
+    float: left;
+    color: black;
+    padding: 6px;
+}
+
+
+.select .selectServer label{
+    float: left;
+}
+
+.select .selectServerText label{
+    float: left;
+}
+.select .selectServer select{
+    width: 161px;
+    height: 22px;
+    float: right;
+    border-radius: 4px;
+    
+}
+.select .selectServerText input{
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #a5a3a3;
+}
+
+.selectServerButton button{
+    float:right;
+    background-color: #a3d6ff;
+    margin-right: 15px;
+    display: inline;
+    border-radius: 4px; 
+    border: 2px solid #266bac;
+}
+
+.selectServerButton button:hover{
+    background-color: #266bac;
+    color: white;
+    
+}
+
+
+.selectServerButton p{
+    margin-left: 5px;
+    display: inline;
+}
+
+ .select .selectServerButton{
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    padding: 4px;
+    border-bottom:2px dotted #3f9df5ce ;
+   
+ }
+
+
+.selectFileButton button{
+    float:right;
+    margin-right: 15px;
+    display: inline;
+    border-radius: 4px;
+    background-color: #a3d6ff;
+    border: 2px solid #266bac;
+}
+
+.selectFileButton button:hover{
+    background-color: #266bac;
+    color: white;
+    
+}
+
+.select .selectFile {
+    width: 24%;
+    float: left;
+    color: black;
+    padding: 6px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.select .selectFileText {
+    width: 24%;
+    float: left;
+    color: black;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 6px;
+
+}
+
+.select .selectFileText [type=text]{
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #a5a3a3;
+}
+
+.selectFileButton p{
+    margin-left: 5px;
+    display: inline;
+}
+
+.select .selectFileButton{
+    width: 100%;
+    color: black;
+    overflow: hidden;
+    padding: 4px;
+    border-bottom:2px dotted #3f9df5ce ;
+ }
+
+ #file{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+}
+
+#filelabel{
+   padding: 7px;
+   padding-left: 11px;
+   padding-right: 11px;
+   background-color: #a3d6ff;
+   border: 2px solid #266bac;
+   border-radius:4px;
+}
+
+#filelabel:hover{
+   background-color: #266bac;
+   color: white;
+}
+
+
+
+ .plot {
+    background-color: #3f9df5ce;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    padding: 5px;
+ }
+
+ .plotSetting{
+    background-color: white;
+    padding:10px;
+    border-bottom:2px dotted #ffffff ;
+    border-radius: 4px 4px 0px 0px; 
+    
+ }
+
+
+
+ .plotSetting p{
+     display: inline;
+     margin-right:7px;
+ }
+
+ .plotSetting label{
+     margin-left: 7px;
+ }
+ .plotSetting button{
+    float:right;
+    margin-left:5px;
+    border-radius: 4px;
+    background-color: #a3d6ff;
+    border: 2px solid #266bac;
+ }
+
+ 
+ .plotSetting button:hover{
+    background-color: #266bac;
+    color: white;
+    
+}
+ .plotSetting input{
+    border-radius: 4px;
+    border: 1px solid #a5a3a3;
+ }
+
+ .plotArea{
+     float: left;
+     display: block;
+     margin-top: 5px;
+     overflow-x: scroll;
+     margin-right:5px;
+     width: 87%;
+ }
+
+ .statArea{
+     margin-top: 5px;
+     background-color: white;
+     width: 12.3%;
+     padding-left: 5px;
+     height: 320px;
+     float: left;
+     border-radius: 0px 0px 4px 0px;
+ }
+
+

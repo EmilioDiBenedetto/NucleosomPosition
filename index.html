@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/plotter.js"></script>
+        <script type="text/javascript" src="js/obj.js"></script>
+        <script type="text/javascript" src="js/spearson.js"></script>
+        <link href="css/home.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body onload="createPage()">
+        <div class="barranav">
+            <a href="index.html">Nucleosome</a>
+        </div>
+        <div class="select" id="Server">
+            <div class="selectServerButton">
+                <p>Select a sample from Server</p>
+                <button onclick="createFromServer()" value="Submit">Submit</button>
+            </div>
+            <div class="selectServer">
+                <label for="specie">Species:</label>  
+                <select id="specie" onchange="tipo(this.value)"></select>
+            </div>
+            <div class="selectServer">
+                <label for="tipo">Cell Type:</label> 
+                <select id="tipo" onchange="campione(this.value)"></select>
+            </div>
+            <div class="selectServer">
+                <label for="campione">Sample:</label> 
+                <select id="campione" onchange="ch(this.value)"></select>
+            </div>
+            <div class="selectServer">
+                <label for="ch">Chromosoma:</label> 
+                <select id="ch"></select>
+            </div>
+            <div class="selectServerText"></div>
+            <div class="selectServerText">
+                <label for="startServer">Start:</label> 
+                <input id="startServer" type="text">
+            </div>
+            <div class="selectServerText">
+                <label for="endServer">End:</label> 
+                <input id="endServer" type="text">
+            </div>
+            <div class="selectServerText">
+                <label for="sizeServer">Windows size:</label> 
+                <input id="sizeServer" type="text">
+            </div>
+            
+        </div>
+        <div class="select" id="File">
+            <div class="selectFileButton">
+                <p>Select a sample from File</p>
+                <button onclick="createFromFile()" style="float: right" value="Submit">Submit</button>
+            </div> 
+            <div class="selectFile">
+                <label for="file" id="filelabel">Choose a file...</label>
+                <input id="file" style="float: left" type="file">
+            </div>
+            <div class="selectFileText">
+                <label for="start">Start:</label>
+                <input id="start" type="text">
+            </div>
+            <div class="selectFileText">  
+                <label for="end">End:</label> 
+                <input id="end" type="text">
+            </div>
+            
+            <div class="selectFileText">  
+                <label for="size">Windows size:</label> 
+                <input id="size" type="text">
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>
